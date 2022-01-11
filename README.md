@@ -1,2 +1,2 @@
-# TPSDemo
- Third Person Shooter in Unity
+# SideScroller
+ Simple SideScroller game in Unity

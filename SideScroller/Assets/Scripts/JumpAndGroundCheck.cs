@@ -9,12 +9,18 @@ public class JumpAndGroundCheck : MonoBehaviour
     float checkRadius = 0.05f;
     public LayerMask whatIsGround;
     Animator animator;
-    Rigidbody rb;
+
+    public float jumpSpeed = 8.0F;
+    public float gravity = 20.0F;
+    private Vector3 moveDirection = Vector3.zero;
+
+    CharacterController controller;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -26,12 +32,17 @@ public class JumpAndGroundCheck : MonoBehaviour
         if (!isGrounded)
         {
             animator.SetBool("isJumping", true);
-            rb.isKinematic = false;
         }
         else
         {
             animator.SetBool("isJumping", false);
-            rb.isKinematic = true;
         }
+
+        if(isGrounded && isJumping)
+        {
+            moveDirection.y = jumpSpeed;
+        }
+        moveDirection.y -= gravity * Time.deltaTime;
+        controller.Move(moveDirection * Time.deltaTime);
     }   
 }

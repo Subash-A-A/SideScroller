@@ -1,22 +1,12 @@
 fileFormatVersion: 2
-guid: cb8b2b87fb40e93439be4315d7e556b8
+guid: 75ec25a5619cf2a488b14b5fbcad728f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Alpha_Body_MAT
-    second: {fileID: 2100000, guid: 038ad23d0d4558147beab1badbbad433, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Alpha_Joints_MAT
-    second: {fileID: 2100000, guid: 8ba2277eb74103645a2681949e15d034, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -85,12 +75,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 50d7747fe6233844c8a5fc3e221c7d57
-  - 75ec25a5619cf2a488b14b5fbcad728f
-  - 987a910dcd327894e9c0d2f1275a0141
-  - 22a05fee1978b7f418ac17d89e0f6c7e
-  - fd8b82c32725d0843901411b5d081322
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -874,11 +859,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: cb8b2b87fb40e93439be4315d7e556b8, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 

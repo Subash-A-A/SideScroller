@@ -7,17 +7,19 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     float velocityZ = 0.0f;
     float acceleration = 0.1f;
+    CharacterController character;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         animator.enabled = true;
+        character = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        bool ragDollActivate = Input.GetKey("space");
+        bool ragDollActivate = Input.GetKey("left shift");
 
         if(velocityZ <= 1)
         {
@@ -25,10 +27,12 @@ public class PlayerController : MonoBehaviour
         }
         if (ragDollActivate)
         {
+            character.enabled = false;
             animator.enabled = false;
         }
         else if (!ragDollActivate)
         {
+            character.enabled = true;
             animator.enabled = true;
         }
 

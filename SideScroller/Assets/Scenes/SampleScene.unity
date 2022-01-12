@@ -179,7 +179,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
-  jumpForce: 300
+  jumpSpeed: 10
+  gravity: 20
 --- !u!1 &132264404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3948933247560734027, guid: cb8b2b87fb40e93439be4315d7e556b8, type: 3}

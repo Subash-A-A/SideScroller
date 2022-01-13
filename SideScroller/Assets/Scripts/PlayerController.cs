@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         bool ragDollActivate = Input.GetKey("q");
-        bool isSliding = Input.GetKey("left shift");
 
         if (velocityZ <= 1)
         {

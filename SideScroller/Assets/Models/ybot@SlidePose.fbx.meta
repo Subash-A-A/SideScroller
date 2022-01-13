@@ -1,22 +1,12 @@
 fileFormatVersion: 2
-guid: cb8b2b87fb40e93439be4315d7e556b8
+guid: a6e09ceea0ba4bc45bad14e2c82bced6
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Alpha_Body_MAT
-    second: {fileID: 2100000, guid: 038ad23d0d4558147beab1badbbad433, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Alpha_Joints_MAT
-    second: {fileID: 2100000, guid: 8ba2277eb74103645a2681949e15d034, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -85,22 +75,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 50d7747fe6233844c8a5fc3e221c7d57
-  - 7baeb0ba8510de64d977b4b4424fc5f6
-  - a334b4efa9f72454896366c25d3a7d4c
-  - dbf8bfa7537112447b7e1d5ecb4b8c87
-  - 75ec25a5619cf2a488b14b5fbcad728f
-  - 987a910dcd327894e9c0d2f1275a0141
-  - da9f40efa3d453f4ab8275437d9a8822
-  - cd31a5584993c474b870e3723d258b04
-  - f00607c615bd42b4bbbdefe84a2becb2
-  - f796fceb62f00d841bd071ac4bf91724
-  - 22a05fee1978b7f418ac17d89e0f6c7e
-  - a6e09ceea0ba4bc45bad14e2c82bced6
-  - 0aae03ebf3e13784d8912a3f62362938
-  - fd8b82c32725d0843901411b5d081322
-  - 357406594480483498724abfbfe6524d
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -884,11 +859,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: cb8b2b87fb40e93439be4315d7e556b8, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 

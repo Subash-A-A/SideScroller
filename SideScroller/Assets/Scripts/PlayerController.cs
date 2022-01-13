@@ -23,8 +23,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         bool ragDollActivate = Input.GetKey("q");
+        bool isSliding = Input.GetKey("left shift");
 
-        if(velocityZ <= 1)
+        if (velocityZ <= 1)
         {
             velocityZ += Time.deltaTime * acceleration;
         }
@@ -39,10 +40,6 @@ public class PlayerController : MonoBehaviour
             jumpScript.enabled = true;
             character.enabled = true;
             animator.enabled = true;
-        }
-        if(Input.GetKeyDown("left shift"))
-        {
-            animator.SetTrigger("Roll");
         }
 
         animator.SetFloat("VelocityZ", velocityZ);

@@ -9,15 +9,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e89f644184e9e4d4abdf357a87e95e21, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: VelocityX
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0749f4af22ce6354bb920ad7d05749c9, type: 2}
+    m_Motion: {fileID: 7400000, guid: 651a0aecab916a342a5cb41719599e95, type: 2}
     m_Threshold: 0.1
     m_Position: {x: 0, y: 0.5}
     m_TimeScale: 1
@@ -34,7 +26,7 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: VelocityZ
   m_BlendParameterY: VelocityZ
-  m_MinThreshold: 0
+  m_MinThreshold: 0.1
   m_MaxThreshold: 0.2
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
@@ -164,13 +156,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer

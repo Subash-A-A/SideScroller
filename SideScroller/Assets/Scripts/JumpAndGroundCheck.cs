@@ -28,7 +28,6 @@ public class JumpAndGroundCheck : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, checkRadius, whatIsGround);
         bool isJumping = Input.GetKeyDown("space");
-        bool isDashing = Input.GetKeyDown("left shift");
 
         if (!isGrounded)
         {
@@ -42,11 +41,6 @@ public class JumpAndGroundCheck : MonoBehaviour
         if(isGrounded && isJumping)
         {
             moveDirection.y = jumpSpeed;
-        }
-
-        if (isDashing)
-        {
-            animator.SetTrigger("Dash");
         }
 
         moveDirection.y -= gravity * Time.deltaTime;
